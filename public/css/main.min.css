@@ -1,17 +1,5 @@
-.btn-share {
-    background: #088dcd;
-    color: white;
-    border: 1px solid #088dcd;
-    border-radius: 2px;
-}
-.modal-backdrop {
-    z-index: -1 !important;
-}
 body {
     font-family: Tahoma !important;
-}
-.dropdown-toggle::after {
-    display: none !important;
 }
 
 @charset "UTF-8";/*!

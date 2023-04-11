@@ -1,95 +1,3 @@
-.we-video-info ins.likers-count,
-.we-video-info ins.dislikers-count,
-.we-video-info ins.shares-count {
-    text-decoration: none;
-    position: relative;
-    bottom: 10px;
-    cursor: pointer;
-}
-
-.we-video-info ins.likers-count:hover {
-    color: greenyellow;
-}
-.we-video-info ins.dislikers-count:hover,
-.we-video-info i.ti-thumb-down:hover {
-    color: red;
-}
-.we-video-info i.ti-thumb-up:hover {
-    color: green;
-}
-
-.we-video-info ins.shares-count {
-    position: relative;
-    left: 30px;
-}
-.we-video-info ins.shares-count:hover {
-    color: skyblue;
-}
-
-.hide {
-    display: none;
-}
-.detail-post {
-    margin-right: 10px;
-}
-.edit-post,
-.delete-post,
-.detail-post {
-    float: right;
-    color: black;
-    cursor: pointer;
-}
-.delete-post {
-    margin-left: 10px;
-}
-.edit-post:hover {
-    color: orange;
-}
-.delete-post:hover {
-    color: red;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: black;
-  text-align: right;
-  font-size: 28px;
-  font-weight: bold;
-  opacity: 1;
-  margin-bottom: 10px;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  opacity: 0.5;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /*
 
 [Master Stylesheet]
@@ -136,8 +44,8 @@ Last change:  4/september/18
 
 /*=============== Fonts source Muli, Hobostd ===================*/
 
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+/*@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800');*/
+/*@import url('https://fonts.googleapis.com/css?family=Satisfy');*/
 @font-face {
     font-family: HoboStd;
     src: url('../fonts/HoboStd.ttf'), url('../fonts/HoboStd.eot');
@@ -337,7 +245,7 @@ section {
 }
 
 .pattern:before {
-    background: #088dcd url("../img/dot-pattern.png") repeat scroll 0 0;
+    background: #088dcd url("../images/dot-pattern.png") repeat scroll 0 0;
     opacity: 0.45;
 }
 
@@ -766,8 +674,8 @@ header.sticky {
     display: inline-block;
     list-style: outside none none;
     margin-bottom: 0;
-    /*padding-left: 0;*/
-    /*vertical-align: middle;*/
+    padding-left: 0;
+    vertical-align: middle;
 }
 
 .top-area > ul > li {
@@ -1586,16 +1494,10 @@ form button {
     color: black;
     cursor: pointer;
 }
-.we-video-info > ul li span.like,
-.we-video-info > ul li span.dislike {
-    cursor: pointer;
-    transition: all 0.2s linear 0s;
-}
-.we-video-info > ul li span.dislike {
-    color: red;
-}
 .we-video-info > ul li span.like {
     color: green;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
 }
 
 .we-video-info > ul li span.like:hover .we-video-info > ul li span.dislike:hover {
@@ -1998,7 +1900,7 @@ li.post-comment .comet-avatar {
 .post-comt-box {
     display: inline-block;
     padding-left: 15px;
-    /*position: relative;*/
+    position: relative;
     width: 93%;
 }
 
@@ -2651,7 +2553,7 @@ footer .logo {
 }
 
 .theme-layout::before {
-    background: url(../img/dot-pattern.png);
+    background: url(../images/dot-pattern.png);
     background-repeat: repeat;
     content: "";
     height: 100%;
@@ -4808,7 +4710,7 @@ canvas {
 }
 
 .top-area > ul.main-menu {
-    float: left;
+    /*float: left;*/
     margin-left: 0px;
     line-height: 60px;
 }
@@ -4828,14 +4730,14 @@ canvas {
     letter-spacing: 0.3px;
 }
 
-.top-area > ul.main-menu > li::after {
-    /*content: "";*/
+/*.top-area > ul.main-menu > li::after {
+    content: "";
     font-family: fontawesome;
     font-size: 13px;
     position: absolute;
     right: 10px;
     top: 0;
-}
+}*/
 
 .top-area > ul.main-menu > li > ul li {
     line-height: initial;
